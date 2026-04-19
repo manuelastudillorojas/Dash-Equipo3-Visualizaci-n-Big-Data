@@ -9,7 +9,7 @@ st.set_page_config(page_title="Dashboard Integral ZOFRI-Supermarket", layout="wi
 
 @st.cache_data
 def load_data():
-    df = pd.read_csv('dataset_lab_3.csv')
+    df = pd.read_csv('data.csv')
     df['Date'] = pd.to_datetime(df['Date'])
     return df
 
